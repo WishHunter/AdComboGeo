@@ -1,0 +1,270 @@
+@keyframes stars_bg 
+	25%
+		transform: scale(0.995);
+	50%
+		transform: scale(1);
+	75%
+		transform: scale(1.005);
+	100%
+		transform: translate(0, 0) scale(1);
+@keyframes orange_planet
+	0%
+		left: -30px
+		bottom: -30px
+	25%
+		left: 50%
+		bottom: 50%
+	50%
+		left: 100%
+		bottom: 70%
+	100%
+		left: 200%
+		bottom: 200%
+@keyframes green_planet
+	0%
+		right: 20%
+		bottom: -35px
+	25%
+		right: 50%
+		bottom: 40%
+	50%
+		right: 100%
+		bottom: 50%
+	100%
+		right: 200%
+		bottom: 200%
+@keyframes pink_planet
+	0%
+		right: -35px
+		bottom: 35%
+	25%
+		right: 50%
+		bottom: 45%
+	50%
+		right: 100%
+		bottom: 55%
+	100%
+		right: 200%
+		bottom: 200%
+@keyframes flying_star1
+	0%
+		left: 10%
+		bottom: -80px
+	20%
+		left: 60%
+		bottom: 100%
+	25%
+		left: 100%
+		bottom: 100%
+	45%
+		left: 100%
+		bottom: -80px
+	50%
+		left: 50%
+		bottom: -80px
+	100%
+		left: 100%
+		bottom: 100%
+@keyframes flying_star2
+	0%
+		right: -60px
+		bottom: 20%
+	20%
+		right: 60%
+		bottom: 100%
+	25%
+		right: 100%
+		bottom: 100%
+	45%
+		right: 100%
+		bottom: -80px
+	50%
+		right: 40%
+		bottom: -80px
+	100%
+		right: 100%
+		bottom: 80%
+
+@keyframes personage_fly
+	100%
+		transform: translateY(-7%)
+
+@keyframes sun_1 
+	100%
+		transform: rotate(360deg)
+@keyframes sun_2 
+	100%
+		transform: rotate(-360deg)
+@keyframes sun_3 
+	20%
+		transform: scale(.9) 
+	30%
+		transform: scale(.95) translate(-10px, 10px)
+	40%
+		transform: scale(1)
+	60%
+		transform: scale(1.1) translate(10px, 10px)
+	80%
+		transform: scale(1)
+	90%
+		transform: scale(0.9) translate(5px, -10px)
+	100%
+		transform: scale(1)
+
+@keyframes right_opacity_open_slider
+	0%
+		opacity: 0
+		transform: translateX(0)
+	30%
+		opacity: .2
+	100%
+		opacity: 1
+		transform: translateX(-50%)
+
+@keyframes scale_open_close
+	0%
+		transform: scale(0)
+	40%, 60% 
+		transform: scale(1)
+	100% 
+		transform: scale(0)
+
+@keyframes scale_open_main
+	100%
+		transform: scale(1)
+		margin-top: 0
+
+.delay1s
+	animation-delay: 1s
+.delay2s
+	animation-delay: 2s
+.delay3s
+	animation-delay: 3s
+.delay4s
+	animation-delay: 4s
+.delay5s
+	animation-delay: 5s
+.delay6s
+	animation-delay: 6s
+.delay7s
+	animation-delay: 7s
+.delay8s
+	animation-delay: 8s
+.delay9s
+	animation-delay: 9s
+
+.animation
+	animation-duration: 1.5s 
+	animation-fill-mode: forwards
+
+.scale_open 
+	transform: scale(0)
+	animation-name: scale_open 
+@keyframes scale_open
+	100%
+		transform: scale(1)
+
+.right_bottom_open
+	transform: scale(0)
+	animation-name: right_bottom_open 
+
+@keyframes right_bottom_open
+	0%
+		transform: scale(1) translate(100%, 100%)
+	100%
+		transform: scale(1) translate(0, 0)
+
+.left_bottom_open
+	transform: scale(0)
+	animation-name: left_bottom_open 
+
+@keyframes left_bottom_open
+	0%
+		transform: scale(1) translate(-100%, 100%)
+	100%
+		transform: scale(1) translate(0, 0)
+
+.left_top_scale_open
+	transform: scale(0)
+	animation-name: left_top_scale_open 
+
+@keyframes left_top_scale_open
+	0%
+		transform: scale(0) translate(100%, 100%)
+	100%
+		transform: scale(1) translate(0, 0)
+
+.right_bottom_scale_open
+	transform: scale(0)
+	animation-name: right_bottom_scale_open 
+
+@keyframes right_bottom_scale_open
+	0%
+		transform: scale(0) translate(-100%, -100%)
+	100%
+		transform: scale(1) translate(0, 0)
+
+.bottom_opacity_open
+	opacity: 0
+	animation-name: bottom_opacity_open 
+
+@keyframes bottom_opacity_open
+	0%
+		opacity: 0
+		transform: translateY(50%)
+	100%
+		opacity: 1
+		transform: translateY(0)
+
+.right_opacity_open
+	opacity: 0
+	animation-name: right_opacity_open 
+
+@keyframes right_opacity_open
+	0%
+		opacity: 0
+		transform: translateX(50%)
+	100%
+		opacity: 1
+		transform: translateY(0)
+
+.left_opacity_open
+	opacity: 0
+	animation-name: left_opacity_open 
+
+@keyframes left_opacity_open
+	0%
+		opacity: 0
+		transform: translateX(-50%)
+	100%
+		opacity: 1
+		transform: translateY(0)
+
+.left_scale_open
+	transform: scale(0)
+	animation-name: left_scale_open 
+
+@keyframes left_scale_open
+	0%
+		transform: scale(0)
+		transform-origin: bottom left
+	100%
+		transform: scale(1)
+		transform-origin: bottom left
+
+
+@media screen and (max-width: 991px) 
+	.animation
+		animation: none !important
+		transform: none !important
+		opacity: 1 !important
+	@keyframes right_opacity_open_slider
+		0%
+			opacity: 0
+			transform: translateX(100%)
+		30%
+			opacity: .2
+		100%
+			opacity: 1
+			transform: translateX(0)
+
